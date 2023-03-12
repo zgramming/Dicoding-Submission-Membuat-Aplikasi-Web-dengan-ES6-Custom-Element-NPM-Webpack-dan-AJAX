@@ -1,0 +1,30 @@
+{
+  "name": "dota2-heroes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "tailwind:watch" :"npx tailwindcss -i ./src/styles/input.css -o ./src/styles/main.css --watch",
+    "start-dev": "webpack serve --config webpack.dev.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "regenerator-runtime": "^0.13.11",
+    "tailwindcss": "^3.2.7"
+  }
+}
