@@ -2,7 +2,7 @@ import axios from 'axios';
 import $ from 'jquery';
 import './components/search-bar.js';
 
-function main() {
+const main = () => {
   const baseUrl = 'https://api.opendota.com/api';
   const baseUrlHeroes = `${baseUrl}/heroes`;
   const searchElement = document.querySelector('search-bar');
@@ -29,9 +29,7 @@ function main() {
       const { id, name, primary_attr, localized_name, attack_type, roles, legs } = hero;
       const inisial = localized_name
         .split(' ')
-        .map(function (item) {
-          return item[0];
-        })
+        .map((item) => item[0])
         .join('');
 
       const component = `
@@ -78,6 +76,6 @@ function main() {
       renderHero(filteredHeroes);
     };
   });
-}
+};
 
 export default main;
