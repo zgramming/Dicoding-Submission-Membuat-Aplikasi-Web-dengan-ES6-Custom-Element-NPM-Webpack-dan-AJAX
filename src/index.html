@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-black">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dota 2 Heroes</title>
   </head>
+
+  <style></style>
   <body>
-    <h1>xaxaxass</h1>
+    <header class="h-20 bg-gray-800">
+      <nav class="flex flex-row items-center justify-between 2xl:w-[1000px] h-full mx-auto">
+        <div class="text-xl text-white font-bold">Dota 2 Heroes</div>
+        <div class="flex flex-wrap gap-3"></div>
+      </nav>
+    </header>
+    <main class="flex flex-col gap-5 min-h-screen 2xl:w-[1000px] mx-auto">
+      <search-bar> </search-bar>
+      <div id="dota2-heroes" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+    </main>
   </body>
-  <script src="scripts/main.js"></script>
 </html>
